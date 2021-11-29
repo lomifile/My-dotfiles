@@ -1,7 +1,7 @@
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set number
+set relativenumber
 set laststatus=2
 
 nmap <C-a> :NERDTreeToggle<CR>
@@ -11,6 +11,9 @@ nmap te :tabedit
 nmap <S-Tab> :tabprev<Return>
 nmap <Tab> :tabnext<Return>
 
+let g:ycm_path_to_python_interpreter='/usr/bin/python3'
+let g:python3_host_prog = '/usr/bin/python3'
+let g:loaded_python_provider = 0
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"

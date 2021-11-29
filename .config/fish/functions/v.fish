@@ -1,3 +1,3 @@
 function v --wraps=vim --description 'alias v vim'
-  vim $argv; 
+  nvim $argv; 
 end
