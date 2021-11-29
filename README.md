@@ -11,7 +11,7 @@ Programs that I use for this to work:
 4. [git](https://git-scm.com/) -> It comes in almost every Linux distribution, but if you don't have it just install it from your package manager.
 5. [exa](https://github.com/ogham/exa) -> Much better alternative to ls, just make sure you install icons and it will look much cleaner.
 6. tree -> When I'm working on a project I use this command to structure my files.
-7. [vim](https://www.vim.org/) -> Editor
+7. [neovim](https://neovim.io/) -> Editor
 
 # Instalation
 
