@@ -11,9 +11,6 @@ nmap te :tabedit
 nmap <S-Tab> :tabprev<Return>
 nmap <Tab> :tabnext<Return>
 
-let g:ycm_path_to_python_interpreter='/usr/bin/python3'
-let g:python3_host_prog = '/usr/bin/python3'
-let g:loaded_python_provider = 0
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
@@ -31,7 +28,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
