@@ -39,6 +39,12 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'c.vim'
 Plugin 'rafi/awesome-vim-colorschemes'
 
+" 1. source %
+" 2. :PluginInstall
+" 3. :call mkdp#util#install()
+
+Plugin 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
 call vundle#end()           
 filetype plugin indent on    
 filetype plugin on

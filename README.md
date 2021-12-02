@@ -15,14 +15,19 @@ Programs that I use for this to work:
 
 # Instalation
 
-To use my dotfiles you will need to copy all of the dotfiles into .config, except .vimrc he goes into /home/{Your name}.
+To use my dotfiles you will need to copy all of the dotfiles into .config, as folder structure suggests.
 
-# Vim installation
+# Neovim installation
 
-To use vim as configured in my .vimrc you will need to install [Vundle](https://github.com/VundleVim/Vundle.vim). After you install Vundle just type ```:PluginInstall``` and it will start the installation process. After Vundle is done installing all of the extensions you will need to build [YCME](https://github.com/ycm-core/YouCompleteMe) and [coc](https://github.com/neoclide/coc.nvim).
-After you build both run ```vim``` or ```v``` for coc to finish the configuration.
+To use neovim as configured in my init.vim you will need to install [Vundle](https://github.com/VundleVim/Vundle.vim). After you install Vundle just type ```:PluginInstall``` and it will start the installation process. After Vundle is done installing all of the extensions you will need to build [coc](https://github.com/neoclide/coc.nvim) using [Yarn](https://yarnpkg.com/).
+After you build both run ```nvim``` or ```v``` for coc to finish the configuration.
+
+I use theme afterglow, but If you don't like that specific theme you can modify ```colorscheme``` and <br /> ```let g:airline_theme``` with the theme you like.
+[Theme resource](https://github.com/rafi/awesome-vim-colorschemes) and [Airline theme resource](https://github.com/vim-airline/vim-airline-themes).
 
 <img src="pics/Editor.png" />
 
 # Issues 
+
+This is Linux specific setup, as I am mainly Linux user.
 This has been tested and proven working on my machines but issues can happen and if you come across one feel free to open it here. Have fun using it :smile:
