@@ -1,12 +1,19 @@
 # My dotfiles
 
-Here are the dotfiles that I use on all of my Linux setups. Doesn't matter which distribution you use, it should work right out of the box. Just make sure you have all programs on the given list.
+Here are the dotfiles that I use on all of my setups. Doesn't matter which distribution you use, it should work right out of the box. Just make sure you have all programs on the given list.
+Since I got my job I have been using macos and this configuration suits both macos and linux aswell.
+
+**If ou are planning to use tmux with my config bare in mind:**
+
+- Use .tmux.powerline.conf for linux distribiutions(I am not sure if statusline exists in linux distros, but I know powerline does)
+- If you are using macos use .tmux.statusline.conf (didn't find powerline to work on my mac so switched to statusline)
 
 <img src="pics/Term.png" />
 
 Programs that I use for this to work:
+
 1. [alacritty](https://github.com/alacritty/alacritty) -> Terminal emulator.
-2. [tmux](https://github.com/tmux/tmux) -> Terminal multiplexer. 
+2. [tmux](https://github.com/tmux/tmux) -> Terminal multiplexer.
 3. [fish-shell](https://fishshell.com/) -> If you want this to work out of the box you will need fish shell.
 4. [fisher](https://github.com/jorgebucaran/fisher) -> Using it to install theme which is [Tide](https://github.com/IlanCosman/tide) and to install extensions like nvm.
 5. [git](https://git-scm.com/) -> It comes in almost every Linux distribution, but if you don't have it just install it from your package manager.
@@ -21,15 +28,22 @@ To use my dotfiles you will need to copy all of the dotfiles into .config, as fo
 
 # Neovim installation
 
-To use neovim as configured in my init.vim you will need to install [Vundle](https://github.com/VundleVim/Vundle.vim). After you install Vundle just type ```:PluginInstall``` and it will start the installation process. After Vundle is done installing all of the extensions you will need to build [coc](https://github.com/neoclide/coc.nvim) using [Yarn](https://yarnpkg.com/).
-After you build both run ```nvim``` or ```v``` for coc to finish the configuration.
+Since vim script become such a pain in the ass to maintain, neovim embeded lua and the whole thing become such a delight to configure.
+I based my config of [CarftzDog](https://github.com/craftzdog/dotfiles-public)s config so it is similar to his as I find his and mine needs similar and his config just works out of the box.
 
-I use theme iceberg, but If you don't like that specific theme you can modify ```colorscheme``` and <br /> ```let g:airline_theme``` with the theme you like.
-[Theme resource](https://github.com/rafi/awesome-vim-colorschemes) and [Airline theme resource](https://github.com/vim-airline/vim-airline-themes).
+Out of the box you get support for:
+
+- Typescript
+- Javascript
+- Python
+- TailwindCSS
+- Astro
+- Lua
+
+I use github-theme, but If you don't like that specific theme you create separate file where your theme config is in `after/` folder.
 
 <img src="pics/Editor.png" />
 
-# Issues 
+# Issues
 
-This is Linux specific setup, as I am mainly Linux user.
 This has been tested and proven working on my machines but issues can happen and if you come across one feel free to open it here. Have fun using it :smile:
