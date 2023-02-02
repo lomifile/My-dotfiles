@@ -17,3 +17,5 @@ end
 if is_linux then
   require('linux')
 end
+
+vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]]
