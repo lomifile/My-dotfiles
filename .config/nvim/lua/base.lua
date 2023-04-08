@@ -29,7 +29,8 @@ vim.opt.wrap = false
 vim.opt.backspace = 'start,eol,indent'
 vim.opt.path:append { '**' }
 vim.opt.wildignore:append { '*/node_modules/*' }
-
+vim.g.mapleader = "<Ctrl>"
+vim.g.material_style = 'deep ocean'
 vim.api.nvim_create_autocmd("InsertLeave", {
   pattern = '*',
   command = 'set nopaste'
