@@ -3,10 +3,7 @@
 Here are the dotfiles that I use on all of my setups. Doesn't matter which distribution you use, it should work right out of the box. Just make sure you have all programs on the given list.
 Since I got my job I have been using macos and this configuration suits both macos and linux aswell.
 
-**If ou are planning to use tmux with my config bare in mind:**
-
-- Use .tmux.powerline.conf for linux distribiutions(I am not sure if statusline exists in linux distros, but I know powerline does)
-- If you are using macos use .tmux.statusline.conf (didn't find powerline to work on my mac so switched to statusline)
+My tmux config should be able to wrok out of the box if you have installed Nerd fonts(in my case I use Hack Nerd font).
 
 <img src="pics/Term.png" />
 
