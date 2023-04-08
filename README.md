@@ -4,6 +4,7 @@ Here are the dotfiles that I use on all of my setups. Doesn't matter which distr
 Since I got my job I have been using macos and this configuration suits both macos and linux aswell.
 
 My tmux config should be able to wrok out of the box if you have installed Nerd fonts(in my case I use Hack Nerd font).
+I am keeping my old tmux powerline and status line config for safe keeping since they are also very okay to use.
 
 <img src="pics/Term.png" />
 
