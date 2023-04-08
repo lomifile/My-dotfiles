@@ -6,7 +6,8 @@ Since I got my job I have been using macos and this configuration suits both mac
 My tmux config should be able to wrok out of the box if you have installed Nerd fonts(in my case I use Hack Nerd font).
 I am keeping my old tmux powerline and status line config for safe keeping since they are also very okay to use.
 
-<img src="pics/Term.png" />
+<img src="pics/Linux/linux_3.png" />
+<img src="pics/Mac/Term.png" />
 
 Programs that I use for this to work:
 
@@ -38,9 +39,22 @@ Out of the box you get support for:
 - Astro
 - Lua
 
-I use github-theme, but If you don't like that specific theme you create separate file where your theme config is in `after/` folder.
+I use github-theme(mostly), but If you don't like that specific theme you create separate file where your theme config is in `after/` folder.
 
-<img src="pics/Editor.png" />
+<img src="pics/Linux/linux_1.png" />
+<img src="pics/Mac/Editor.png" />
+
+# <b>NOTICE</b>
+
+I have been running this setup on both linux distors(Manjaro, Arch, Debian, Ubuntu etc.) and macOs and didn't have much problems, it takes few minutes to setup bare that in mind.
+
+My go to(now) for linux is:
+
+- Manjaro(KDE)
+- i3WM
+
+I don't use this setup on windows nor will anytime soon.
+I also use this setup to program both professionaly and as hobby so yes, you can use it in professional use.
 
 # Issues
 
