@@ -7,7 +7,6 @@ My tmux config should be able to wrok out of the box if you have installed Nerd 
 I am keeping my old tmux powerline and status line config for safe keeping since they are also very okay to use.
 
 <img src="pics/Linux/term.png" />
-<img src="pics/Mac/Term.png" />
 
 Programs that I use for this to work:
 
