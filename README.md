@@ -6,7 +6,7 @@ Since I got my job I have been using macos and this configuration suits both mac
 My tmux config should be able to wrok out of the box if you have installed Nerd fonts(in my case I use Hack Nerd font).
 I am keeping my old tmux powerline and status line config for safe keeping since they are also very okay to use.
 
-<img src="pics/Linux/linux_3.png" />
+<img src="pics/Linux/term.png" />
 <img src="pics/Mac/Term.png" />
 
 Programs that I use for this to work:
@@ -20,6 +20,7 @@ Programs that I use for this to work:
 7. tree -> When I'm working on a project I use this command to structure my files.
 8. [neovim](https://neovim.io/) -> Editor
 9. [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) -> Font I use is Hack from Nerd fonts. <b>Hack nerd font</b>
+10. [LazyVim](https://www.lazyvim.org/) -> Neovim distro I use now
 
 # Instalation
 
@@ -28,25 +29,18 @@ To use my dotfiles you will need to copy all of the dotfiles into .config, as fo
 # Neovim installation
 
 Since vim script become such a pain in the ass to maintain, neovim embeded lua and the whole thing become such a delight to configure.
-I based my config of [CarftzDog](https://github.com/craftzdog/dotfiles-public)s config so it is similar to his as I find his and mine needs similar and his config just works out of the box.
+Since 2023-11-10 I adopted LazyNvim distro which in most part for now fullfills my need for editor. I am not 100% set on config that I use but currently this fullfills all my needs.
+You can reference docs [here](https://www.lazyvim.org/)
 
-Out of the box you get support for:
+With lazyvim you get some themes installed on system. For now I settled for tokyo-night from same author of LazyVim. 
 
-- Typescript
-- Javascript
-- Python
-- TailwindCSS
-- Astro
-- Lua
-
-I use github-theme(mostly), but If you don't like that specific theme you create separate file where your theme config is in `after/` folder.
-
-<img src="pics/Linux/linux_1.png" />
-<img src="pics/Mac/Editor.png" />
+<img src="pics/Linux/nvim.png" />
 
 # <b>NOTICE</b>
 
-I have been running this setup on both linux distors(Manjaro, Arch, Debian, Ubuntu etc.) and macOs and didn't have much problems, it takes few minutes to setup bare that in mind.
+This setup is run on all my machines:
+- I have a mac for my day job and this setup works out of the box(M1 Macbook pro with 16GB of RAM and 256GB of memory)
+- I have linux setup with Manjaro KDE and i3WM as my main workbench(Lenovo ThinkPad T490 with 24GB of RAM and 512GB of memory)
 
 My go to(now) for linux is:
 
