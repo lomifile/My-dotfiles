@@ -18,7 +18,7 @@ Programs that I use for this to work:
 6. [exa](https://github.com/ogham/exa) -> Much better alternative to ls, just make sure you install icons and it will look much cleaner.
 7. tree -> When I'm working on a project I use this command to structure my files.
 8. [neovim](https://neovim.io/) -> Editor
-9. [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) -> Font I use is Hack from Nerd fonts. <b>Hack nerd font</b>
+9. [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) -> Font I use is CaskayidaCove from Nerd fonts. <b>CaskayidaCove nerd font</b>
 10. [LazyVim](https://www.lazyvim.org/) -> Neovim distro I use now
 
 # Instalation
