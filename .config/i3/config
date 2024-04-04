@@ -79,6 +79,10 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+# Setup monitors
+bindsym $mod+Shift+h exec --no-startup-id ~/.config/i3/home_setup
+bindsym $mod+Shift+a exec --no-startup-id ~/.config/i3/laptop_setup
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -241,7 +245,7 @@ bar {
         urgent_workspace   #000000 #000000 #E5201D
     }
 }
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper/cEgYLw.png
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper/klNLXU.png
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
