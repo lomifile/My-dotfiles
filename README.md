@@ -19,7 +19,9 @@ Programs that I use for this to work:
 7. tree -> When I'm working on a project I use this command to structure my files.
 8. [neovim](https://neovim.io/) -> Editor
 9. [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) -> Font I use is CaskayidaCove from Nerd fonts. <b>CaskayidaCove nerd font</b>
-10. [LazyVim](https://www.lazyvim.org/) -> Neovim distro I use now
+10. [Rofi](https://github.com/davatorium/rofi) -> Modern drun 
+11. [LazyVim](https://www.lazyvim.org/) -> Neovim distro I use now
+12. [Polybar](https://github.com/polybar/polybar) -> i3bar alternative
 
 # Instalation
 
@@ -39,7 +41,7 @@ With lazyvim you get some themes installed on system. For now I settled for toky
 
 This setup is run on all my machines:
 - I have a mac for my day job and this setup works out of the box(M1 Macbook pro with 16GB of RAM and 256GB of memory)
-- I have linux setup with Manjaro KDE and i3WM as my main workbench(Lenovo ThinkPad T490 with 24GB of RAM and 512GB of memory)
+- I have linux setup with Manjaro KDE and i3WM as my main workbench(Intel core i7 6700K, 16Gb RAM, Nvidia graphics card)
 
 My go to(now) for linux is:
 

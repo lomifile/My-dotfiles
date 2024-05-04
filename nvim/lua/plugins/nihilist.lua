@@ -1,7 +1,6 @@
-local Util = require("lazy.util")
 return {
-  -- Colorcheme
 
+  -- Colorcheme
   {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -43,7 +42,7 @@ return {
         notify = true,
         semantic_tokens = true,
         telescope = true,
-        treesitter = true,
+        kreesitter = true,
         treesitter_context = true,
         which_key = true,
       },
@@ -54,7 +53,7 @@ return {
     {
       "LazyVim/LazyVim",
       opts = {
-        colorscheme = "catppuccin-macchiato",
+        colorscheme = "tokyonight-night",
       },
     },
 
