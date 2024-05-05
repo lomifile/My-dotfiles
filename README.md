@@ -6,7 +6,7 @@ Since I got my job I have been using macos and this configuration suits both mac
 My tmux config should be able to wrok out of the box if you have installed Nerd fonts(in my case I use Hack Nerd font).
 I am keeping my old tmux powerline and status line config for safe keeping since they are also very okay to use.
 
-<img src="pics/Linux/term.png" />
+<img src="pics/new_term.png" />
 
 Programs that I use for this to work:
 
@@ -35,7 +35,7 @@ You can reference docs [here](https://www.lazyvim.org/)
 
 With lazyvim you get some themes installed on system. For now I settled for tokyo-night from same author of LazyVim. 
 
-<img src="pics/Linux/nvim.png" />
+<img src="pics/new_nvim.png" />
 
 # <b>NOTICE</b>
 
