@@ -26,6 +26,7 @@ Programs that I use for this to work:
 # Instalation
 
 To use my dotfiles you will need to copy all of the dotfiles into .config, as folder structure suggests.
+<b>NOTICE: Double check your output monitor for polybar so you input correct monitor to not get error.</b>
 
 # Neovim installation
 
@@ -41,7 +42,7 @@ With lazyvim you get some themes installed on system. For now I settled for toky
 
 This setup is run on all my machines:
 - I have a mac for my day job and this setup works out of the box(M1 Macbook pro with 16GB of RAM and 256GB of memory)
-- I have linux setup with Manjaro KDE and i3WM as my main workbench(Intel core i7 6700K, 16Gb RAM, Nvidia graphics card)
+- I have linux setup with Manjaro KDE and i3WM as my main workbench(Lenovo ThinkPad E14 -> AMD Ryzen 7 7735HS with Radeon 680M Graphics card, 32Gb RAM and 1TB SSD)
 
 My go to(now) for linux is:
 
