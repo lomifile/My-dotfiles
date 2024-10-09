@@ -289,4 +289,100 @@ return {
       extensions = {},
     },
   },
+  {
+    "hrsh7th/nvim-cmp",
+    version = false, -- last release is way too old
+    event = "InsertEnter",
+    dependencies = {
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
+    },
+    -- Not all LSP servers add brackets when completing a function.
+    -- To better deal with this, LazyVim adds a custom option to cmp,
+    -- that you can configure. For example:
+    --
+    -- lua     -- opts = {     --   auto_brackets = { "python" }     -- }     --
+    opts = function()
+      vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment", default = true })
+      local cmp = require("cmp")
+      local defaults = require("cmp.config.default")()
+      local auto_select = true
+      return {
+        auto_brackets = {}, -- configure any filetype to auto add brackets
+        completion = {
+          completeopt = "menu,menuone,noinsert" .. (auto_select and "" or ",noselect"),
+        },
+        window = {
+          completion = cmp.config.window.bordered({
+            winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+            col_offset = -3,
+            side_padding = 0,
+          }),
+          documentation = cmp.config.window.bordered(),
+        },
+        preselect = auto_select and cmp.PreselectMode.Item or cmp.PreselectMode.None,
+        mapping = cmp.mapping.preset.insert({
+          ["<C-b>"] = cmp.mapping.scroll_docs(-4),
+          ["<C-f>"] = cmp.mapping.scroll_docs(4),
+          ["<C-Space>"] = cmp.mapping.complete(),
+          ["<CR>"] = LazyVim.cmp.confirm({ select = auto_select }),
+          ["<C-y>"] = LazyVim.cmp.confirm({ select = true }),
+          ["<S-CR>"] = LazyVim.cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace }), -- Accept currently selected item. Set select to false to only confirm explicitly selected items.
+          ["<C-CR>"] = function(fallback)
+            cmp.abort()
+            fallback()
+          end,
+        }),
+        sources = cmp.config.sources({
+          { name = "nvim_lsp" },
+          { name = "path" },
+        }, {
+          { name = "buffer" },
+        }),
+        formatting = {
+          fields = {
+            "kind",
+            "abbr",
+            "menu",
+          },
+          format = function(entry, item)
+            local icons = LazyVim.config.icons.kinds
+            if icons[item.kind] then
+              local strings = vim.split(item.kind, "%s", { trimempty = true })
+              item.kind = " " .. icons[item.kind]
+              item.menu = "    (" .. (strings[1] or "") .. ")"
+            end
+
+            return item
+          end,
+        },
+        experimental = {
+          ghost_text = {
+            hl_group = "CmpGhostText",
+          },
+        },
+        sorting = defaults.sorting,
+      }
+    end,
+    main = "lazyvim.util.cmp",
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function(plugin)
+      if vim.fn.executable("npx") then
+        vim.cmd("!cd " .. plugin.dir .. " && cd app && npx --yes yarn install")
+      else
+        vim.cmd([[Lazy load markdown-preview.nvim]])
+        vim.fn["mkdp#util#install"]()
+      end
+    end,
+    init = function()
+      if vim.fn.executable("npx") then
+        vim.g.mkdp_filetypes = { "markdown" }
+      end
+    end,
+  },
 }
