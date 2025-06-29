@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight-moon",
+      colorscheme = "carbonfox",
     },
   },
   {
@@ -21,61 +21,6 @@ return {
           hide_gitignored = true,
         },
       },
-    },
-  },
-  {
-    "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
-    opts = {
-      icons_enabled = true,
-      theme = "tokyonight",
-      options = {
-        component_separator = "|",
-        section_separators = {
-          left = "█",
-          right = "█",
-        },
-      },
-      sections = {
-        lualine_a = {
-          {
-            "mode",
-            separator = { left = "█" },
-            padding = {
-              right = 1,
-              left = 1,
-            },
-          },
-        },
-        lualine_b = { "diagnostics", "filename", "branch" },
-        lualine_c = { "fileformat" },
-        lualine_x = {},
-        lualine_y = {
-          "filetype",
-          "progress",
-        },
-        lualine_z = {
-          {
-            "location",
-            separator = {
-              right = "█",
-            },
-            padding = {
-              left = 2,
-            },
-          },
-        },
-      },
-      inactive_sections = {
-        lualine_a = { "filename" },
-        lualine_b = {},
-        lualine_c = {},
-        lualine_x = {},
-        lualine_y = {},
-        lualine_z = { "location" },
-      },
-      tabline = {},
-      extensions = {},
     },
   },
   {
@@ -101,4 +46,7 @@ return {
       }
     end,
   },
+  { "mason-org/mason.nvim", version = "^1.0.0" },
+  { "mason-org/mason-lspconfig.nvim", version = "^1.0.0" },
+  { "EdenEast/nightfox.nvim" },
 }
